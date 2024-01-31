@@ -22,8 +22,8 @@ class UserController{
                     })
                     await doc.save()
                     }catch(error){
-                            //console.log(error)
-                            //res.send({"status":"failed","message":"unable to register"})
+                            console.log(error)
+                            res.send({"status":"failed","message":"unable to register"})
                     }
                 }else{
                     res.send({"status":"failed", "message":"password and comfirmed passsword doesnot match"})

@@ -69,10 +69,12 @@ class UserController {
     static changePassword = async(req,res)=>{
         const  {password, password_confirmation} = req.body
         if(password && password_confirmation){
-            if(password=== password_confirmation){
+            if(password === password_confirmation){
                 const salt = await bcrypt.genSalt(10)
                 const hashPassword = await bcrypt.hash(password, salt)
-                
+                //console.log(req.user._id)
+                await userModel.findByIdAndUpdate(req.user._id, { $set: { password: hashPassword }})
+                res.send({ "status": "success", "message": "password changed succeefully"})
             }else{
                 res.send({ "status": "failed", "message": "fields does not matches"})
             }

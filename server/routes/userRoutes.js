@@ -12,7 +12,7 @@ router.post('/register', UserController.userRegistration),
 router.post('/login', UserController.userLogin)
 router.post('/send-reset-password-email', UserController.sendUserPasswordResetEmail)
 router.post('/reset-password/:id/:token', UserController.userPasswordReset)
-
+router.post('/bloodbank/recipient/request',UserController.bloodDonation)
 
 //private routes
 router.post('/changepassword', UserController.changePassword)

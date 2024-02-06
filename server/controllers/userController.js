@@ -19,14 +19,16 @@ class UserController {
                             name: name,
                             email: email,
                             password: hashPassword,
-                            tc: tc
+                            tc: tc,
+                            blood_group: blood_group,
+                            purpose: purpose
                         })
                         await doc.save()
                         const saved_user = await userModel.findOne({email:email})
                             //gernerate jwt token
                             const token = jwt.sign({ userID: saved_user._id}, process.env.
                             JWT_SECRET_KEY, { expiresIn: '5d'})
-                            res.status(201).send({ "status":"success", "message":"registreation successfully done!!", "token": token})
+                            res.status(201).send({ "status":"success", "message":"registreation successfully done!!", "token": token, "userID": saved_user.user._id})
                     } catch (error) {
                         console.log(error)
                         res.send({ "status": "failed", "message": "unable to register" })
@@ -128,6 +130,44 @@ class UserController {
             res.send({"status":"failed", "message":"invalid"})
         }
     }
+ /*   static bloodDonation = async(req, res) =>{
+        const {blood_group: req_blood_group,purpose} = req.body
+        if(!req_blood_group){
+            res.send({ "status": "failed", "message": "blood group already exists" })
+        }else{
+            if(req_blood_group && purpose){
+                try{
+                    await userModel.findByIdAndUpdate(req.userID, { $set: { blood_group: req_blood_group, purpose:purpose}})
+                    res.send({"status": "success", "message": "blood gorup and purpose added successfully"})
+                }
+                catch(error){
+                    console.log(error)
+                    console.log(req.userID)
+                    res.send({"status":"failed", "message":"invalid"})
+                }
+            }
+        }
+    }*/
+    static bloodDonation = async (req, res) => {
+        const { blood_group: req_blood_group, purpose } = req.body;
+        if (!req_blood_group) {
+            res.send({ "status": "failed", "message": "blood group already exists" });
+        } else {
+            if (req_blood_group && purpose) {
+                try {
+                    res.send({ "user": req.user })
+                    await userModel.findByIdAndUpdate(userID, { $set: { blood_group: req_blood_group, purpose: purpose } });
+                    res.send({ "status": "success", "message": "blood group and purpose added successfully" });
+                } catch (error) {
+                    console.log(error);
+                    console.log(userID); // Check if req.user._id is defined
+                    res.send({ "status": "failed", "message": "invalid" });
+                }
+            }
+        }
+    };
+    
+    
 
 }
 export default UserController

@@ -150,14 +150,22 @@ class UserController {
     }*/
     static bloodDonation = async (req, res) => {
         const { blood_group: req_blood_group, purpose } = req.body;
+        //res.send({ "userID": req.body })
+        const { userID } = req.body;
+        const user = req.user 
         if (!req_blood_group) {
             res.send({ "status": "failed", "message": "blood group already exists" });
         } else {
             if (req_blood_group && purpose) {
                 try {
-                    res.send({ "user": req.user })
-                    await userModel.findByIdAndUpdate(userID, { $set: { blood_group: req_blood_group, purpose: purpose } });
-                    res.send({ "status": "success", "message": "blood group and purpose added successfully" });
+                    //const secret =  user._id + process.env.JWT_SECRET_KEY
+                    //const token = jwt.sign({ userID: user._id}, secret)
+                    const account = user._id
+                    console.log(account)
+                    await userModel.findByIdAndUpdate(userID, { $set: { blood_group: req_blood_group, purpose: purpose, userID } });
+
+                    //console.log(userID);
+                    res.send({ "status": "success", "message": "blood group and purpose added successfully"+req_blood_group+purpose+user });
                 } catch (error) {
                     console.log(error);
                     console.log(userID); // Check if req.user._id is defined

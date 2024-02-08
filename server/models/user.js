@@ -6,8 +6,8 @@ const userSchema = new mongoose.Schema({
     email:{type:String, required:true, trim:true},
     password:{type:String, required:true, trim:true},
     tc:{type:Boolean, required:true, trim:true},
-    blood_group:{type:String, required:false, trim:true},
-    purpose:{type:String, required:false, trim:true}
+    blood_group:{type:String, required:true, trim:true},
+    purpose:{type:String, required:true, trim:true}
 
 })
 

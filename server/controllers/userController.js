@@ -20,8 +20,7 @@ class UserController {
                             email: email,
                             password: hashPassword,
                             tc: tc,
-                            blood_group: blood_group,
-                            purpose: purpose
+                            blood_group: blood_group
                         })
                         await doc.save()
                         const saved_user = await userModel.findOne({email:email})
@@ -153,8 +152,8 @@ class UserController {
         //res.send({ "userID": req.body })
         const { userID } = req.body;
         const user = req.user 
-        if (!req_blood_group) {
-            res.send({ "status": "failed", "message": "blood group already exists" });
+        if (!req_blood_group) { 
+            res.send({ "status": "failed", "message": "user doesnot add blood" });
         } else {
             if (req_blood_group && purpose) {
                 try {

@@ -1,0 +1,37 @@
+.nav {
+    background-color: #333; /* Background color of the navbar */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around navbar contents */
+  }
+  
+  .site-title {
+    display: flex; /* Make the site title a flex container */
+    align-items: center; /* Center the content vertically */
+    text-decoration: none; /* Remove default link underline */
+    color: inherit; /* Inherit text color */
+    font-size: 1.2rem; /* Adjust font size as needed */
+  }
+  
+  .site-title:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+  }
+  
+  ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+  
+  ul li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 20px; /* Add space between list items */
+  }
+  
+  ul li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+  }
+  
+  .active {
+    font-weight: bold; /* Apply bold font weight to active link */
+  }
+  

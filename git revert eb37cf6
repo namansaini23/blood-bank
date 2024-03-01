@@ -1,0 +1,226 @@
+[33mcommit 29cd952d363f559ee622f16c9ef7d42264c5d04d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 80303c2 e35969a
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Fri Mar 1 23:28:19 2024 +0530
+
+    Merge branch 'master' of https://github.com/namansaini23/blood-bank
+
+[33mcommit 80303c287ef6927cfc4f07bea78174cb242465dd[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Fri Mar 1 23:28:05 2024 +0530
+
+    1/3/24
+
+[33mcommit e35969aed1be2cc70cc23a5a00df9911add9c11f[m
+Author: navmeetsekhon <navmeetsekhon@gmail.com>
+Date:   Fri Mar 1 22:16:04 2024 +0530
+
+    deleted unnecessary files
+
+[33mcommit c014b279b1f2218204dd34b263777b659d118173[m
+Author: navmeetsekhon <navmeetsekhon@gmail.com>
+Date:   Tue Feb 27 15:36:33 2024 +0530
+
+    minor commit
+
+[33mcommit 65158aa40763ef62f7ac0c4b5effeb69ba7fec2a[m
+Merge: 6f000c6 8968ed1
+Author: navmeetsekhon <navmeetsekhon@gmail.com>
+Date:   Tue Feb 27 15:35:53 2024 +0530
+
+    Merge branch 'master' of github.com:namansaini23/blood-bank
+
+[33mcommit 6f000c6e4287048c0b4e1026e76bf5a12c0a2c29[m
+Author: navmeetsekhon <navmeetsekhon@gmail.com>
+Date:   Tue Feb 27 15:35:24 2024 +0530
+
+    Navbar design update
+
+[33mcommit 8968ed116e7116f59c495a6b7213dc4cbe23de7e[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Tue Feb 27 12:17:09 2024 +0530
+
+    new changes
+
+[33mcommit 34fafb677e264aee2a6b2478a35d60472036c5fb[m
+Merge: 39a21a2 eb37cf6
+Author: navmeetsekhon <navmeetsekhon@gmail.com>
+Date:   Fri Feb 23 21:20:46 2024 +0530
+
+    Merge branch 'master' of github.com:namansaini23/blood-bank
+
+[33mcommit 39a21a27ea88a8cb91db1c2ece6068f8dc2b5827[m
+Author: navmeetsekhon <navmeetsekhon@gmail.com>
+Date:   Fri Feb 23 21:19:45 2024 +0530
+
+    client directory update,new react-ts project
+
+[33mcommit eb37cf67a31ce129be2de1367da5f4cef7468b85[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Wed Feb 21 23:19:03 2024 +0530
+
+    new files
+
+[33mcommit 08765608847ac153f5b7605a66011cb31016d03d[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Thu Feb 8 16:48:11 2024 +0530
+
+    api update
+
+[33mcommit e6ab0f8cf6952bf522e3609f2f6a90aca2144052[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Tue Feb 6 23:54:49 2024 +0530
+
+    blood donation api
+    
+    _id not finding in new function thus api is not functional
+
+[33mcommit 429a9bac0dab386739d32689866b3066f262ca3f[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Sat Feb 3 20:59:11 2024 +0530
+
+    password reset on another link api
+
+[33mcommit 810a4114efc4fea07b09b8c8fd9bd0c35a750022[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Sat Feb 3 19:44:52 2024 +0530
+
+    logged user changes
+
+[33mcommit b6e737143f2207188a1649b1edae8a7edeaf0c38[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Sat Feb 3 18:45:07 2024 +0530
+
+    till change password api
+
+[33mcommit 835a0ad6c60cfe7e1c5628d5302a699d26d1540d[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Sat Feb 3 15:28:20 2024 +0530
+
+    03/02/2024
+
+[33mcommit baed0639b5882281b67b966d124676f451605b1a[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Thu Feb 1 01:28:34 2024 +0530
+
+    Update userController.js
+
+[33mcommit 232494c95909020575f20531940390062852094b[m
+Merge: 4fc7337 cd1ef27
+Author: Navmeet Singh <64701624+navmeetsekhon@users.noreply.github.com>
+Date:   Tue Jan 30 21:51:13 2024 +0530
+
+    Merge pull request #4 from namansaini23/b2
+    
+    merging branches
+
+[33mcommit cd1ef27ca1af9d09bfc42803b9f2a66b385d9ad1[m
+Author: navmeetsekhon <navmeetsekhon@gmail.com>
+Date:   Tue Jan 30 21:49:54 2024 +0530
+
+    deleted db.js
+
+[33mcommit 4fc73377931577e5f1fef27269a053bf81ddfea9[m
+Author: navmeetsekhon <navmeetsekhon@gmail.com>
+Date:   Tue Jan 30 21:44:18 2024 +0530
+
+    commit message
+
+[33mcommit 1abfcc2c1ff9dc94eb8c2c2708c1c3add90348bc[m
+Merge: f5bdb44 efb0568
+Author: navmeetsekhon <navmeetsekhon@gmail.com>
+Date:   Tue Jan 30 21:35:43 2024 +0530
+
+    Merge branch 'master' of github.com:namansaini23/blood-bank
+
+[33mcommit f5bdb44dcfdb10b49132668029588c994af81d59[m
+Author: navmeetsekhon <navmeetsekhon@gmail.com>
+Date:   Tue Jan 30 21:29:32 2024 +0530
+
+    Revert "commit message"
+    
+    This reverts commit c754ada21742c4a52863c50f4621a4fb8f67aa9a.
+
+[33mcommit c754ada21742c4a52863c50f4621a4fb8f67aa9a[m
+Author: navmeetsekhon <navmeetsekhon@gmail.com>
+Date:   Tue Jan 30 21:27:18 2024 +0530
+
+    commit message
+
+[33mcommit efb056837ecce43f8c497c9579c13d8d5148576d[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Mon Jan 29 01:36:09 2024 +0530
+
+    28-1-24
+
+[33mcommit 2f490737f546e71415a1127bc305baf0cb7d978a[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Sun Jan 28 02:22:43 2024 +0530
+
+    new folder and files with mongodb connected
+
+[33mcommit 3d663d990b19be9473bace3875d4b3a1d1c84c4c[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Sun Jan 7 16:19:26 2024 +0530
+
+    intermediate commit
+
+[33mcommit e791ce04e59226f7c2abacbe6cf67d9bd8cb7f38[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Sat Jan 6 15:10:05 2024 +0530
+
+    commit
+
+[33mcommit 9378d6b445a754c80f59614665debbed0077b442[m
+Author: navmeetsekhon <navmeetsekhon@gmail.com>
+Date:   Sat Jan 6 15:07:28 2024 +0530
+
+    changes
+
+[33mcommit 13711cf95760ec4977cc1c00af9a745811111a87[m
+Author: navmeetsekhon <navmeetsekhon@gmail.com>
+Date:   Sat Jan 6 15:06:34 2024 +0530
+
+    initial commit
+
+[33mcommit a5b8a97b0d3f66ecaa4cae8fca0591030dda8dca[m
+Merge: 7186a23 44366bc
+Author: Navmeet Singh <64701624+navmeetsekhon@users.noreply.github.com>
+Date:   Sat Jan 6 15:02:39 2024 +0530
+
+    Merge pull request #3 from namansaini23/b2
+    
+    Merge pull request #2 from namansaini23/master
+
+[33mcommit 44366bcd6b4b2f63484d0482dc9f1b49e052bfd9[m
+Merge: 63e8322 7186a23
+Author: Navmeet Singh <64701624+navmeetsekhon@users.noreply.github.com>
+Date:   Sat Jan 6 15:02:06 2024 +0530
+
+    Merge pull request #2 from namansaini23/master
+    
+    sat first commit
+
+[33mcommit 7186a23d4de77ce65e0cc4dc86b41789f65d0a53[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Sat Jan 6 14:45:51 2024 +0530
+
+    sat first commit
+
+[33mcommit 63e83224e8306c8ec51a5ede51f3bf4aba9c9e40[m
+Author: navmeetsekhon <navmeetsekhon@gmail.com>
+Date:   Wed Jan 3 22:17:45 2024 +0530
+
+    import express
+
+[33mcommit 13a25c278491e4407aa39a8265f5a72187deb3ef[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Wed Jan 3 21:56:13 2024 +0530
+
+    first commit
+
+[33mcommit f141c3b57d307f1ec8e67419df4f9b731100c68c[m
+Author: namansaini23 <namansaini2307@gmail.com>
+Date:   Wed Jan 3 21:47:43 2024 +0530
+
+    first commit

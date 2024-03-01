@@ -20,8 +20,12 @@ class UserController {
                             email: email,
                             password: hashPassword,
                             tc: tc,
+<<<<<<< HEAD
                             blood_group: blood_group,
                             purpose: purpose
+=======
+                            blood_group: blood_group
+>>>>>>> parent of 8968ed1 (new changes)
                         })
                         await doc.save()
                         const saved_user = await userModel.findOne({email:email})
@@ -153,8 +157,13 @@ class UserController {
         //res.send({ "userID": req.body })
         const { userID } = req.body;
         const user = req.user 
+<<<<<<< HEAD
         if (!req_blood_group) {
             res.send({ "status": "failed", "message": "blood group already exists" });
+=======
+        if (!req_blood_group) { 
+            res.send({ "status": "failed", "message": "user doesnot add blood" });
+>>>>>>> parent of 8968ed1 (new changes)
         } else {
             if (req_blood_group && purpose) {
                 try {

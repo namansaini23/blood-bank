@@ -1,9 +1,7 @@
 import React from 'react'
-
-function Home() {
+const Home:React.FC = () => {
   return (
     <div>
-      {/* <NavBar /> */}
       {/* <Link to advert> */}
       {/* <Link to ad posting form>*/}
       {/* <Link to user profile */}

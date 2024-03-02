@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import Logo from "../components/Logo";
+import '../styles/Navbar.css';
 
 const Navbar: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const Navbar: React.FC = () => {
             <CustomLink to="/">Home</CustomLink>
           </li>
           <li>
-            <CustomLink to="/donate">Donate</CustomLink>
+            <CustomLink to="/adpage">Donate</CustomLink>
           </li>
           <li>
             <CustomLink to="/postad">Get blood</CustomLink>
@@ -27,10 +28,7 @@ const Navbar: React.FC = () => {
             <CustomLink to="/contact">Contact us</CustomLink>
           </li>
           <li>
-            <Link to="/login" className="btn-special">Log in</Link>
-          </li>
-          <li>
-            <Link to="/signup" className="btn-special">Register</Link>
+            <CustomLink to="/login" className="login-button">Login</CustomLink>
           </li>
         </ul>
       </div>
@@ -42,15 +40,17 @@ const Navbar: React.FC = () => {
 interface CustomLinkProps {
   to: string;
   children: React.ReactNode;
+  className?: string;
 }
 
-const CustomLink: React.FC<CustomLinkProps> = ({ to, children }) => {
+const CustomLink: React.FC<CustomLinkProps> = ({ to, children,className }) => {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+  const classNames = `hover:opacity-60 ${isActive ? "font-semibold" : ""} ${className || ""}`;
 
   return (
-    <li className={isActive ? "font-semibold" : ""}>
-      <Link to={to} className="hover:opacity-60">
+    <li className={classNames}>
+      <Link to={to}>
         {children}
       </Link>
     </li>

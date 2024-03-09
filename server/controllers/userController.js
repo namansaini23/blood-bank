@@ -147,6 +147,23 @@ class UserController {
             }
         }
     }*/
+    static currentUser = async (req,res) => {
+        try{
+            const user = await userModel.findOne({_id: res.body.userID});
+            return res.status(200).send({
+                suceess: true,
+                message: "user feteched succesfully",
+                user,
+            })
+        }catch(error){
+            console.log(error);
+            return res.status(500).send({
+                success: false,
+                message: "unable to find user",
+                error,
+            })
+        }
+    }
     static bloodDonation = async (req, res) => {
         const { blood_group: req_blood_group, purpose } = req.body;
         //res.send({ "userID": req.body })
@@ -182,4 +199,5 @@ class UserController {
 
 }
 }
+
 export default UserController

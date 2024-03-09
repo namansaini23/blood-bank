@@ -2,6 +2,7 @@ import  express  from "express";
 const router = express.Router();
 import UserController from "../controllers/userController.js";
 import checkUserAuth from "../middlewares/auth-middleware.js";
+import bloodbankLogic from "../controllers/bloodDonationLogic.js";
 
 //route level middleware - to protect route
 router.use('/changepassword', checkUserAuth)
@@ -13,6 +14,7 @@ router.post('/login', UserController.userLogin)
 router.post('/send-reset-password-email', UserController.sendUserPasswordResetEmail)
 router.post('/reset-password/:id/:token', UserController.userPasswordReset)
 router.post('/bloodbank/recipient/request',checkUserAuth,UserController.bloodDonation)
+//router.get('/getalladds', bloodbankLogic.getAllAds)
 
 //private routes
 router.post('/changepassword', UserController.changePassword)

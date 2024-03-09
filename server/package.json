@@ -1,28 +1,27 @@
 {
-  "name": "project",
-  "version": "1.0.0",
-  "main": "app.js",
+  "name": "bloodbank",
+  "version": "1.6.1",
+  "description": "A simple yet functional and secure Blood Bank Web Application I made for my assigment. Uses Node JS and MongoDB primarily. If you are familiar enough in a beginner level with Node JS and mongoose this is a good project to clone and try to replicate.",
+  "main": "index.js",
+  "author": "rishav394",
   "scripts": {
-    "start": "node app",
-    "dev": "nodemon app"
+    "test": "echo 'Error: no test specified'",
+    "start": "node index.js",
+    "populate": "node util/populator.js"
   },
-  "author": "",
   "license": "ISC",
-  "type": "module",
   "dependencies": {
-    "bcrypt": "^5.1.1",
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.1",
-    "express": "^4.18.3",
-    "jsonwebtoken": "^9.0.2",
-    "mongodb": "^6.3.0",
-    "mongoose": "^8.1.1",
-    "nodemailer": "^6.9.8"
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "dotenv": "^8.1.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.22",
+    "morgan": "^1.9.1"
   },
-  "keywords": [],
-  "description": "",
   "devDependencies": {
-    "nodemon": "^3.0.3"
+    "eslint": "^6.1.0",
+    "prettier": "^2.1.2"
   }
 }
